@@ -1,0 +1,112 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+footer {
+    background-color: #fff;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+}
+:root {
+    --main-color: #332082;
+    --sub-color: #C58E50;
+}
+button:focus {outline: none;}
+a.custom-btn:hover {color: #fff;text-decoration: none;}
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url(/img/arrow.png) !important;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: right 14px center;
+    color: #777 !important;
+  }
+.title {
+    color: var(--main-color);
+    font-weight: normal;
+    border-block: 1px solid var(--main-color);
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+.text-color {color: var(--main-color);}
+.back {color: var(--main-color);}
+.msg {color: forestgreen;}
+.pizza-card h4 {color: var(--sub-color);font-weight: bold;}
+.pizza-card a {background-color: var(--main-color);border-radius: 25px;box-shadow: 0px 2px 5px 0px rgba(51, 51, 51, 0.167);}
+.no-label {cursor: pointer;}
+form label:not(.no-label) {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333;
+  }
+input[type="checkbox"]:checked,input[type="radio"]:checked{
+  accent-color :var(--main-color);
+  }
+    
+select,
+textarea,input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] 
+{
+    display: block;
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px 10px;
+  }
+input[type="text"],select,
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    height: 40px;
+}
+textarea {height: 150px;}
+input:focus,textarea:focus,select
+  {outline: none;box-shadow: none;}
+form button, .custom-btn {
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 7px 30px;
+    cursor: pointer;
+    border: none;
+  }
+.toppings span {
+  background-color: #f2f0fc;
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+  padding: 2px 20px;
+  color: var(--main-color);
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+}
+@media(max-width:768px) {
+  .img {width: auto;max-height: 160px;}
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .title {font-size: 22px;}
+  .pizza-card a {
+    width: 62%;
+    margin: auto;
+  }
+}
+@media(max-width:768px) {
+  .back {
+    float: left;
+    margin: 5px 0;
+  }
+}
